@@ -117,6 +117,7 @@
     background-image: url("../../assets/left-arrow.png");
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
   }
   button:hover {
     background: #bbbbbb;
