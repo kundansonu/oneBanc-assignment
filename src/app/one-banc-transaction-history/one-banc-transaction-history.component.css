@@ -1,0 +1,153 @@
+.container {
+    width: 600px;
+    border: 1px solid gray;
+  }
+  .body {
+    padding-top: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 450px;
+  }
+  .right {
+    float: right;
+    width: 300px;
+    padding-right: 20px;
+  }
+  .left {
+    width: 300px;
+    padding-left: 20px;
+    float: left;
+  }
+  .box {
+    width: 100%;
+    height: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .transactionRecord {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 16px;
+    height: 70px;
+  }
+  
+  .amount {
+    float: left;
+    width: 40%;
+  }
+  .amount > p {
+    font-size: 28px;
+    display: inline;
+  }
+  .type {
+    width: 60%;
+    display: inline-block;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 42px;
+    text-align: end;
+  }
+  .type img {
+    width: 16px;
+    height: 16px;
+  }
+  .transactionId {
+    width: 30%;
+    font-size: 12px;
+    float: left;
+  }
+  .bottomDate {
+    font-size: 12px;
+    text-align: end;
+    padding-top: 4px;
+  }
+  .firstNameCircle {
+    display: inline-block;
+    background: #c9e6c6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  .firstNameCircle p {
+    text-align: center;
+  }
+  .personDetail {
+    padding: 12px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .header {
+    border-bottom: 1px solid gray;
+  }
+  
+  button {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button {
+    margin-right: 16px;
+  }
+  button:last-child {
+    margin-right: 0px;
+  }
+  
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+  .backButton {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../assets/left-arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  button:hover {
+    background: #bbbbbb;
+    color: #fff;
+    border: #bbbbbb;
+  }
+  .actionIcon {
+    width: 24px;
+    height: 24px;
+    float: right;
+    background-image: url("../../assets/right-arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .transactionButtons {
+    float: left;
+  }
+  div.date {
+    border-top: 3px dotted #ccc;
+  }
+  h1 {
+    font-size: 0.9em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-top: -0.75em;
+    text-align: center;
+  }
+  h1 span {
+    background-color: #fff;
+    padding: 0 5px;
+  }
+  

@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="header">
+		<div class="backButton"></div>
+		<div class="accountHeader">
+			<div class="firstNameCircle">
+				<p>J</p>
+			</div>
+			<div class="personDetail">
+				<div class="fullName">John Doe</div>
+				<div class="phoneNumber">+91 7672345</div>
+			</div>
+		</div>
+	</div>
+	<div class="body" #transactionBody>
+		<div *ngFor="let detail of transactionReportByDate | keyvalue">
+			<div class="date">
+				<h1><span>{{detail.key}}</span></h1> </div>
+			<div class="box" *ngFor="let transactionRecord of getValue(detail.key)">
+				<div [ngClass]="transactionRecord.direction == 1 ? 'right' : 'left'">
+					<div class="transactionRecord">
+						<div class="amount">₹
+							<p>{{transactionRecord.amount}}</p>
+						</div>
+						<div class="type"><img src="assets/{{getTransactionStatusIcon(transactionRecord.status)}}.png"> {{getTransactionStatus(transactionRecord.direction,transactionRecord.status)}}</div>
+						<div class="transactionId" *ngIf="transactionRecord.status==2">Transaction ID {{transactionRecord.id}}</div>
+						<div class="transactionButtons" *ngIf="transactionRecord.type==2">
+							<button *ngIf="transactionRecord.direction==1">Cancel</button>
+							<button *ngIf="transactionRecord.direction==2">Pay</button>
+							<button *ngIf="transactionRecord.direction==2">Reject</button>
+						</div>
+						<div class="actionIcon"></div>
+					</div>
+					<div class="bottomDate">{{transactionRecord.startDate | date:'d MMM y, h:mm: a'}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
